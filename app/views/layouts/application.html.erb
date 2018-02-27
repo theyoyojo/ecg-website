@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EcgWebsite</title>
+    <title>Engaging Computing Group</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,30 @@
   </head>
 
   <body>
+    <div class="menu">
+      <ul>
+        <li><%= link_to 'Home' , '/' %></li>
+        <li><%= link_to 'Projects' , '/projects' %></li>
+        <li><%= link_to 'People' , '/people' %></li>
+        <li><%= link_to 'Articles' , '/articles' %></li>
+        <li><%= link_to 'Contact' , '/' %></li>
+      </ul>
+    </div>
+    <h5>begin content</h5>
     <%= yield %>
+    <h5>end content</h5>
+    
+    <div class="footer">
+      <div class="col1">
+        col1
+      </div>
+      <div class="col2">
+        col2
+      </div>
+      <div class="col3">
+        col3
+      </div>
+    </div>
+    
   </body>
 </html>
