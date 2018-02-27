@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180214214207) do
+ActiveRecord::Schema.define(version: 20180227170012) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string "name"
+    t.string "author"
+    t.date "published_on"
+    t.string "csv_tags"
+    t.string "text_link"
+    t.string "text_link_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "people", force: :cascade do |t|
     t.string "name"
@@ -21,6 +32,18 @@ ActiveRecord::Schema.define(version: 20180214214207) do
     t.string "linkedin"
     t.string "github"
     t.string "website"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "name"
+    t.integer "start_year"
+    t.string "csv_tags"
+    t.string "short_desc"
+    t.string "long_desc"
+    t.string "website"
+    t.string "github"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

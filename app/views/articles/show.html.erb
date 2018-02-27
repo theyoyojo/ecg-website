@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @article.name %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @article.author %>
+</p>
+
+<p>
+  <strong>Published on:</strong>
+  <%= @article.published_on %>
+</p>
+
+<p>
+  <strong>Csv tags:</strong>
+  <%= @article.csv_tags %>
+</p>
+
+<p>
+  <strong>Text link:</strong>
+  <%= @article.text_link %>
+</p>
+
+<p>
+  <strong>Text link type:</strong>
+  <%= @article.text_link_type %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
