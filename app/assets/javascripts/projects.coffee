@@ -37,4 +37,4 @@ $ ->
   )
 
   if namespace.controller is "projects" and namespace.action is "home"
-    alert("we're home")
+    alert("We're home!")
